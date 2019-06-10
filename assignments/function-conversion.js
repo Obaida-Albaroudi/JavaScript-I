@@ -1,5 +1,4 @@
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
-
 const myFunction = ()=>"Function was invoked!";
 console.log(myFunction())
 
@@ -17,7 +16,5 @@ subtract(1,2);
 Stretch
 
 exampleArray = [1,2,3,4];
-const triple = exampleArray.map(function (num) {
-  return num * 3;
-});
-console.log(triple);
+const triple = (num) => num * 3;
+console.log(exampleArray.map(triple));
